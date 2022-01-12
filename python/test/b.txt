@@ -1,0 +1,13 @@
+n = 2
+y = []
+with open("a.txt",'r') as f:
+    for row in f:
+        x = row.strip()
+        y.append(x)
+while y:
+    a, b = map(int, y[0].split())
+    c, d = map(int, y[1].split())
+    del y[:n]
+    ans = str(a*d - b*c)
+    with open("b.txt", "a") as f:
+        f.write('\n'.join(ans))

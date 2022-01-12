@@ -1,0 +1,5 @@
+n, k = map(int, input().split())
+a = list(map(int, input().split()))
+m = a.index(1)
+ans = -(-(n-1)//(k-1))
+print(ans)
